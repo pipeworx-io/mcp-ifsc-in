@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ifsc_lookup",
+    "description": "Indian bank branch lookup by IFSC code. Resolves an 11-character IFSC code (printed on Indian cheques and bank statements) to the bank name, branch, address, city, district, state, MICR code, SWIFT code, and contact number, plus whether the branch supports the NEFT, RTGS, UPI, and IMPS payment rails. India banking / fund-transfer routing data via the open Razorpay IFSC dataset (keyless). Also returns an offline format_valid check of the code structure. NOTE: this validates and resolves the IFSC code itself — it does NOT verify a bank account or account holder. Examples: ifsc_lookup({ ifsc: \"HDFC0CAGSBK\" }), ifsc_lookup({ ifsc: \"sbin0000691\" }) (case and spaces are forgiven).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ifsc": {
+          "type": "string",
+          "description": "The 11-character IFSC code, e.g. \"HDFC0CAGSBK\" or \"SBIN0000691\". Format: 4 letters (bank) + 0 + 6 alphanumerics (branch). Spaces and lowercase are tolerated."
+        }
+      },
+      "required": [
+        "ifsc"
+      ]
+    }
+  }
+]
