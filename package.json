@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ifsc-in",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ifsc-in MCP — Indian bank branch IFSC code lookup via Razorpay's open IFSC API (ifsc.razorpay.com). Keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ifsc-in",
     "gatewaySlug": "ifsc-in",
-    "sourceHash": "v1-fd64a81fef33c797c3a9ff5ae446bee3112229c91fe086a4125c018038e50119",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-6d63dde57ea27fac11694e24d404db9cb991ea918a07d3c14481f689db4f2e34",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
